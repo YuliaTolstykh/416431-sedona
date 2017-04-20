@@ -28,81 +28,98 @@
         </div>
       </header>
       <div class="options">
-        <!-- В этом теге я еще не сделала, сейчас прохожу формы
         <form>
           <div class="features">
             <h2 class="headline-features">Инфраструктура</h2>
             <input class="item-features" type="checkbox" id="pool">
-            <label class="" for="pool"> Бассейн </label>
+            <label class="mark-features" for="pool"> Бассейн </label>
             <input class="item-features" type="checkbox" id="parking">
-            <label for="parking"> Парковка </label>
+            <label class="mark-features" for="parking"> Парковка </label>
             <input class="item-features" type="checkbox" id="wi-fi">
-            <label for="wi-fi">Wi-Fi </label>
+            <label class="mark-features" for="wi-fi">Wi-Fi </label>
           </div>
           <div class="features">
             <h2 class="headline-features">Тип жилья</h2>
             <input class="item-features" type="checkbox" id="hotel">
-            <label for="hotel"> Гостиница </label>
+            <label class="mark-features" for="hotel"> Гостиница </label>
             <input class="item-features" type="checkbox" id="motel">
-            <label for="motel"> Мотель </label>
+            <label class="mark-features" for="motel"> Мотель </label>
             <input class="item-features" type="checkbox" id="apartments">
-            <label for="apartments"> Апартаменты </label>
+            <label class="mark-features" for="apartments"> Апартаменты </label>
           </div>
           <div class="selection-price">
-            <h2 class="headline-selection-price">Стоимость в сутки (Р):</h2>
-
+            <h2 class="headline-price">Стоимость в сутки (Р):</h2>
+            <input class="from-price" type="text" name="from-price" value="от 0">
+            <input class="to-price" type="text" name="to-price" value="до 3000">
+            <div class="cursor-price"></div>
+            <input class="btn-price" type="submit" value="Показать" name="price">
           </div>
         </form>
-        До сих пор можно не проверять-->
       </div>
       <div class="sort">
-        <h2 class="headline-sort">Найдено:</h2>
-        <div class="result-sort">3
-        </div>
+        <span class="headline-sort">Найдено:</span> <!--вставить спан в заголовок? или заголовок в спан? -->
+        <div class="result-sort">3</div>
         <span class="text-sort">сортировка:</span>
-        <div class="menu-sort"> по цене по типу по классу
-          <!--Пока не знаю, что это <a> или <menu> или checkbox или что-то еще-->
-        </div>
-        <div class="arrow-sort">
-          <span class="down-sort"></span>
-          <span class="up-sort"></span>
-        </div>
+        <ul class="menu-sort">
+          <li class="item-sort"><a class="price-sort" href="#">по цене</a></li>
+          <li class="item-sort"><a class="type-sort" href="#">по типу</a></li>
+          <li class="item-sort"><a class="rating-sort" href="#">по рейтингу</a></li>
+        </ul>
+        <ul class="arrow-sort">
+          <li class="item-down-sort"><a class="down-sort" href="#"></a></li>
+          <li class="item-up-sort"><a class="up-sort" href="#"></a></li>
+        </ul>
       </div>
       <div class="hotel">
-        <article class="preview-hotel">
           <img class="img-hotel src="" alt="name-hotel"">
-          <h2 class="headline-hotel"> Название отеля </h2>
-          <span class="type-hotel"> Тип гостиницы </span>
-          <span class="price-hotel"> от ... р. </span>
-          <a class="details-hotel" href="#">Подробнее</a>
-          <a class="booking-hotel" href="#">Забронировать</a>
-        </article>
-        <div class="state-hotel">
-        </div>
+          <div class="preview-hotel">
+              <h2 class="headline-hotel"> Название отеля </h2>
+              <div class="box-hotel">
+                <div class="item-box-hotel">
+                  <span class="type-hotel"> Тип гостиницы </span>
+                  <a class="details-hotel" href="#">Подробнее</a>
+                </div>
+                <div class="item-box-hotel">
+                  <span class="price-hotel"> от ... р. </span>
+                  <a class="booking-hotel" href="#">Забронировать</a>
+                </div>
+              </div>
+          </div>
+          <div class="state-hotel"></div>
       </div>
       <div class="hotel">
-        <article class="preview-hotel">
           <img class="img-hotel src="" alt="name-hotel"">
-          <h2 class="headline-hotel"> Название отеля </h2>
-          <span class="type-hotel"> Тип гостиницы </span>
-          <span class="price-hotel"> от ... р. </span>
-          <a class="details-hotel" href="#">Подробнее</a>
-          <a class="booking-hotel" href="#">Забронировать</a>
-        </article>
-        <div class="state-hotel">
-        </div>
+          <div class="preview-hotel">
+              <h2 class="headline-hotel"> Название отеля </h2>
+              <div class="box-hotel">
+                <div class="item-box-hotel">
+                  <span class="type-hotel"> Тип гостиницы </span>
+                  <a class="details-hotel" href="#">Подробнее</a>
+                </div>
+                <div class="item-box-hotel">
+                  <span class="price-hotel"> от ... р. </span>
+                  <a class="booking-hotel" href="#">Забронировать</a>
+                </div>
+              </div>
+          </div>
+          <div class="state-hotel"></div>
       </div>
       <div class="hotel">
-        <article class="preview-hotel">
           <img class="img-hotel src="" alt="name-hotel"">
-          <h2 class="headline-hotel"> Название отеля </h2>
-          <span class="type-hotel"> Тип гостиницы </span>
-          <span class="price-hotel"> от ... р. </span>
-          <a class="details-hotel" href="#">Подробнее</a>
-          <a class="booking-hotel" href="#">Забронировать</a>
-        </article>
-        <div class="state-hotel">
-        </div>
+          <div class="preview-hotel">
+              <h2 class="headline-hotel"> Название отеля </h2>
+              <div class="box-hotel">
+                <div class="item-box-hotel">
+                  <span class="type-hotel"> Тип гостиницы </span>
+                  <a class="details-hotel" href="#">Подробнее</a>
+                </div>
+                <div class="item-box-hotel">
+                  <span class="price-hotel"> от ... р. </span>
+                  <a class="booking-hotel" href="#">Забронировать</a>
+                </div>
+              </div>
+          </div>
+          <div class="state-hotel"></div>
       </div>
       <footer class="footer">
         <section class="text">
