@@ -49,15 +49,30 @@
           </div>
           <div class="selection-price">
             <h2 class="headline-price">Стоимость в сутки (Р):</h2>
-            <input class="from-price" type="text" name="from-price" value="от 0">
-            <input class="to-price" type="text" name="to-price" value="до 3000">
-            <div class="cursor-price"></div>
+            <div class="choice-price">
+              <div class="field-price">
+                <input class="from-price" type="text" name="from-price" value="от 0">
+                <input class="to-price" type="text" name="to-price" value="до 3000">
+              </div>
+              <div class="cursor-price">
+                <div class="item-curcor-price">
+                  <input class="range" type="range" name="range">
+                  <div class="grip"></div>
+                </div>
+                <div class="item-curcor-price">
+                  <input class="range" type="range" name="range">
+                  <div class="grip"></div>
+                </div>
+              </div>
+            </div>
             <input class="btn-price" type="submit" value="Показать" name="price">
           </div>
         </form>
       </div>
       <div class="sort">
-        <span class="headline-sort">Найдено:</span> <!--вставить спан в заголовок? или заголовок в спан? -->
+        <h2 class="headline-sort"> Найдено:
+          <span class="result-sort">3</span>
+        </h2>
         <div class="result-sort">3</div>
         <span class="text-sort">сортировка:</span>
         <ul class="menu-sort">
@@ -73,7 +88,24 @@
       <div class="hotel">
           <img class="img-hotel src="" alt="name-hotel"">
           <div class="preview-hotel">
-              <h2 class="headline-hotel"> Название отеля </h2>
+              <h2 class="headline-hotel"><a class="link-hotel"> Название отеля </a></h2>
+              <div class="box-hotel">
+                <div class="item-box-hotel">
+                  <span class="text-hotel"> Тип гостиницы </span>
+                  <a class="details-hotel" href="#">Подробнее</a>
+                </div>
+                <div class="item-box-hotel">
+                  <span class="text-hotel"> от ... р. </span>
+                  <a class="booking-hotel" href="#">Забронировать</a>
+                </div>
+              </div>
+          </div>
+          <div class="state-hotel"></div>
+      </div>
+      <div class="hotel">
+          <img class="img-hotel src="" alt="name-hotel"">
+          <div class="preview-hotel">
+              <h2 class="headline-hotel"><a class="link-hotel"> Название отеля </a></h2>
               <div class="box-hotel">
                 <div class="item-box-hotel">
                   <span class="type-hotel"> Тип гостиницы </span>
@@ -90,7 +122,7 @@
       <div class="hotel">
           <img class="img-hotel src="" alt="name-hotel"">
           <div class="preview-hotel">
-              <h2 class="headline-hotel"> Название отеля </h2>
+              <h2 class="headline-hotel"><a class="link-hotel"> Название отеля </a></h2>
               <div class="box-hotel">
                 <div class="item-box-hotel">
                   <span class="type-hotel"> Тип гостиницы </span>
@@ -102,24 +134,10 @@
                 </div>
               </div>
           </div>
-          <div class="state-hotel"></div>
-      </div>
-      <div class="hotel">
-          <img class="img-hotel src="" alt="name-hotel"">
-          <div class="preview-hotel">
-              <h2 class="headline-hotel"> Название отеля </h2>
-              <div class="box-hotel">
-                <div class="item-box-hotel">
-                  <span class="type-hotel"> Тип гостиницы </span>
-                  <a class="details-hotel" href="#">Подробнее</a>
-                </div>
-                <div class="item-box-hotel">
-                  <span class="price-hotel"> от ... р. </span>
-                  <a class="booking-hotel" href="#">Забронировать</a>
-                </div>
-              </div>
+          <div class="state-hotel">
+            <div class="stars"></div>
+            <div class="rating"></div>
           </div>
-          <div class="state-hotel"></div>
       </div>
       <footer class="footer">
         <section class="text">
