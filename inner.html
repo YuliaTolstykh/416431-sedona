@@ -47,22 +47,24 @@
             <input class="item-features" type="checkbox" id="apartments">
             <label class="mark-features" for="apartments"> Апартаменты </label>
           </div>
-          <div class="selection-price">
+          <div class="price">
             <h2 class="headline-price">Стоимость в сутки (Р):</h2>
             <div class="choice-price">
               <div class="field-price">
-                <input class="from-price" type="text" name="from-price" value="от 0">
-                <input class="to-price" type="text" name="to-price" value="до 3000">
+                <div class="">
+                  <input class="item-price" type="text" name="from-price" value="0" id="from-price">
+                  <label class="label-price" for="from-price"> от </label>
+                </div>
+                <div class="">
+                  <input class="item-price" type="text" name="to-price" value="3000" id="to-price">
+                  <label class="label-price" for="to-price"> до </label>
+                </div>
               </div>
               <div class="cursor-price">
-                <div class="item-curcor-price">
-                  <input class="range" type="range" name="range">
-                  <div class="grip"></div>
-                </div>
-                <div class="item-curcor-price">
-                  <input class="range" type="range" name="range">
-                  <div class="grip"></div>
-                </div>
+                <div class="range"></div>
+                <div class="range"></div>
+                <div class="grip"></div>
+                <div class="grip"></div>
               </div>
             </div>
             <input class="btn-price" type="submit" value="Показать" name="price">
@@ -92,11 +94,11 @@
               <div class="box-hotel">
                 <div class="item-box-hotel">
                   <span class="text-hotel"> Тип гостиницы </span>
-                  <a class="details-hotel" href="#">Подробнее</a>
+                  <a class="btn-hotel" href="#">Подробнее</a>
                 </div>
                 <div class="item-box-hotel">
                   <span class="text-hotel"> от ... р. </span>
-                  <a class="booking-hotel" href="#">Забронировать</a>
+                  <a class="btn-hotel" href="#">Забронировать</a>
                 </div>
               </div>
           </div>
@@ -108,12 +110,12 @@
               <h2 class="headline-hotel"><a class="link-hotel"> Название отеля </a></h2>
               <div class="box-hotel">
                 <div class="item-box-hotel">
-                  <span class="type-hotel"> Тип гостиницы </span>
-                  <a class="details-hotel" href="#">Подробнее</a>
+                  <span class="text-hotel"> Тип гостиницы </span>
+                  <a class="btn-hotel" href="#">Подробнее</a>
                 </div>
                 <div class="item-box-hotel">
-                  <span class="price-hotel"> от ... р. </span>
-                  <a class="booking-hotel" href="#">Забронировать</a>
+                  <span class="text-hotel"> от ... р. </span>
+                  <a class="btn-hotel" href="#">Забронировать</a>
                 </div>
               </div>
           </div>
@@ -125,12 +127,12 @@
               <h2 class="headline-hotel"><a class="link-hotel"> Название отеля </a></h2>
               <div class="box-hotel">
                 <div class="item-box-hotel">
-                  <span class="type-hotel"> Тип гостиницы </span>
-                  <a class="details-hotel" href="#">Подробнее</a>
+                  <span class="text-hotel"> Тип гостиницы </span>
+                  <a class="btn-hotel" href="#">Подробнее</a>
                 </div>
                 <div class="item-box-hotel">
-                  <span class="price-hotel"> от ... р. </span>
-                  <a class="booking-hotel" href="#">Забронировать</a>
+                  <span class="text-hotel"> от ... р. </span>
+                  <a class="btn-hotel" href="#">Забронировать</a>
                 </div>
               </div>
           </div>
