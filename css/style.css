@@ -1,0 +1,176 @@
+body {
+		width: 1200px;
+	  font-family: "PT Sans", "Arial", serif;
+	  font-size: 14px;
+	  font-weight: normal;
+		text-transform: uppercase;
+		background-color: #f2f2f2;
+ }
+ h2 {
+	 font-size: 21px;
+ }
+                          /*!!!!!!Класс border: 2px dotted green; во всем файле - временный, для меня!!!!!!!!*/
+/* -----HEADER---------*/
+ .header {
+	 width: 1200px;
+	 height: 56px;
+	 background-color: white;
+ }
+ .navigation {
+	 width: 1200px;
+	 height: inherit;
+	 padding: 0;
+ }
+ .list-navigation {
+	 list-style-type: none;
+	 text-align: center;
+ }
+ .item-navigation {
+	 width: 240px;
+	 float: left;
+	 vertical-align: middle;
+   margin: 0;
+ }
+ .item-navigation:nth-child(1) {margin-left: -40px;},
+ .item-navigation:nth-child(2) {
+	 float: left;
+ }
+ .item-navigation:nth-child(3),
+ .item-navigation:nth-child(4) {
+	 float: right;
+ }
+ .logo {
+	 position: absolute;
+	 top: 5px;
+	 left: 540px;
+ }
+ /*-------- MAIN PART I-----------*/
+.picture {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.picture-img {
+	margin-bottom: 0;
+	background-color: white;
+}
+.picture-title-img {
+	display: inline-block;
+	position: absolute;
+	width: 460px;
+	top: 77px;
+	padding: 0;
+	margin-left: 370px;
+	margin-right: auto;
+}
+.picture-base {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+.text {
+	box-sizing: border-box;
+	height: 216px;
+	background-color: white;
+/*	padding-top: 63px;*/
+	margin: 0;
+	text-align: center;
+	/*line-height: 35px;*/
+}
+.headline-text {
+	display: inline-block;
+  width: 500px;
+	padding-top: 50px;
+	margin: 0;
+}
+.paragraph-text {
+	margin-top: 30px;
+	display: block;
+}
+/*-------- MAIN PART II-----------*/
+.box {
+	display: flex;
+	min-height: 256px;
+	border: 1px solid blue;/*!!!!!!!!!*/
+}
+.card {
+	flex-basis: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: white;
+	background-color: #81b3d2;
+  border: 1px solid blue;/*!!!!!!!!!*/
+}
+.headline-card {
+	text-align: center;
+	width: 160px;
+}
+.paragraph-card {
+	text-align: center;
+	width: 290px;
+	line-height: 1.7;
+}
+.image {
+	flex-basis: 400px;
+	flex-grow 1;            /*-----------Почему-то не работает flex-grow? ------------*/
+	border: 1px solid red;/*!!!!!!!!!*/
+
+}
+.box-variation {
+	display: flex;
+	min-height: 330px;
+	justify-content: space-around;
+border: 1px solid blue;/*!!!!!!!!!*/
+}
+.part {
+	flex-basis: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+	align-items: center;
+  border: 1px solid blue;/*!!!!!!!!!*/
+}
+.headline-part {
+	text-align: center;
+	width: 160px;
+}
+.paragraph-part {
+	text-align: center;
+	width: 290px;
+	line-height: 1.7;
+}
+.card-gray {
+	color: black;
+	background-color: #f2f2f2;
+}
+
+ /*-------FOOTER--------------*/
+.footer {
+	display: flex;
+	width: 1200px;
+	height: 56px;
+	background-color: white;
+	justify-content: space-around;
+}
+.text-footer {
+	width: 400px;
+	align-self: center;
+	text-align: center;
+	font-size: 21px;
+	font-weight: bold;
+}
+.social {
+	width: 400px;
+	align-self: center;
+	text-align: center;
+}
+.copyrihgt {
+	width: 400px;
+	align-self: center;
+	text-align: center;
+	font-size: 14px;
+}
