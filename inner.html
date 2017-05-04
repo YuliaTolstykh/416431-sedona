@@ -51,26 +51,19 @@
             <label class="mark-features" for="apartments"> Апартаменты </label>
           </div>
           <div class="price">
-            <h2 class="headline-price">Стоимость в сутки (Р):</h2>
-            <div class="choice-price">
+            <h2 class="headline-features">Стоимость в сутки (Р):</h2>
               <div class="field-price">
-                <div class="">
-                  <input class="item-price" type="text" name="from-price" value="0" id="from-price">
-                  <label class="label-price" for="from-price"> от </label>
-                </div>
-                <div class="">
-                  <input class="item-price" type="text" name="to-price" value="3000" id="to-price">
-                  <label class="label-price" for="to-price"> до </label>
-                </div>
+                  <label class="from-price" > от <input  type="text" name="from-price" value="0" id="from-price"></label>
+                  <label class="to-price" > до <input  type="text" name="to-price" value="3000" id="to-price"></label>
               </div>
               <div class="cursor-price">
-                <div class="range"></div>
-                <div class="range"></div>
-                <div class="grip"></div>
-                <div class="grip"></div>
+                <div class="scale">
+                <div class="streak"></div>
               </div>
-            </div>
-            <input class="btn-price" type="submit" value="Показать" name="price">
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            <button class="btn-price" type="submit"> Показать </button>
           </div>
         </form>
       </div>
@@ -84,17 +77,9 @@
           <li class="item-sort"><a class="type-sort" href="#">по типу</a></li>
           <li class="item-sort"><a class="rating-sort" href="#">по рейтингу</a></li>
         </ul>
-        <!-- <ul class="arrow-sort">
-          <li class="item-down-sort"><a class="down-sort" href="#"></a></li>
-          <li class="item-up-sort"><a class="up-sort" href="#"></a></li>
-        </ul> -->
-        <!-- <div class="arrow-sort">
-          <a class="down-sort" href="#"><img src="img/arrowUp1.png"  width="11" height="10">cv</a>
-          <a class="up-sort" href="#"><img src="img/arrowDown1.png"  width="11" height="10"></a>
-        </div> -->
         <div class="arrow-sort">
-          <a class="up-sort" href="#">по возрастанию</a>
-          <a class="down-sort" href="#">по убыванию</a>
+          <a class="up-sort" href="#"></a>
+          <a class="down-sort" href="#"></a>
         </div>
       </div>
       <div class="hotel">
@@ -113,7 +98,7 @@
               </div>
           </div>
           <div class="state-hotel">
-            <div class="stars">5 звезд</div>
+            <div class="stars  stars5">5 звезд</div>
             <div class="rating">рейтинг: 8.5</div>
           </div>
       </div>
@@ -135,7 +120,7 @@
               </div>
           </div>
           <div class="state-hotel">
-            <div class="stars">3 звезды</div>
+            <div class="stars stars3">3 звезды</div>
             <div class="rating">рейтинг: 8.9</div>
           </div>
       </div>
@@ -155,7 +140,7 @@
               </div>
           </div>
           <div class="state-hotel">
-            <div class="stars"> 2 звезды</div>
+            <div class="stars stars2"> 2 звезды</div>
             <div class="rating">рейтинг: 9.2</div>
           </div>
       </div>
