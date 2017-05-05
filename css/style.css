@@ -540,7 +540,7 @@ body {
 }
 
 .features {
-  padding-right: 95px;
+  margin-right: 95px;
 }
 
 .features:nth-of-type(2) {
