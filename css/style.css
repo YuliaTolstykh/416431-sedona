@@ -219,7 +219,7 @@ body {
   position: relative;
 	width: 400px;
   margin: 0;
-  padding-top: 160px;
+  padding-top: 54px;
 	padding-bottom: 80px;
   text-align: center;
 }
@@ -233,14 +233,12 @@ body {
 
 .headline-part::before {
   content: " ";
-  position: absolute;
-  bottom: 200px;
-  left: 50%;
 
-  display: inline-block;
+  display: block;
   width: 75px;
   height: 72px;
-  margin-left: -38px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
   background: transparent url(../img/icon-house.png) no-repeat center;
   background-color: #fefefe;
@@ -249,7 +247,6 @@ body {
 .part:nth-of-type(2) .headline-part::before {
   width: 74px;
   height: 70px;
-  margin-left: -37px;
 
   background: transparent url(../img/icon-burger.png) no-repeat center;
 }
@@ -257,7 +254,6 @@ body {
 .part:nth-of-type(3) .headline-part::before {
   width: 64px;
   height: 76px;
-  margin-left: -32px;
 
   background: transparent url(../img/icon-gift.png) no-repeat center;
 }
@@ -529,8 +525,8 @@ body {
  /*---------------------------- MAIN PART of inner.html ------------- */
 .options {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 33px;
   padding-left: 6%;
   padding-right: 6%;
 
@@ -544,7 +540,7 @@ body {
 }
 
 .features {
-  min-width: 220px;
+  padding-right: 95px;
 }
 
 .features:nth-of-type(2) {
@@ -564,20 +560,21 @@ body {
 }
 
 .price {
-  width: 330px;
+  width: 320px;
 
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .headline-features {
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 11px;
 }
 
 .field-price {
   position: relative;
-  height: 36px;
-  margin-bottom: 20px;
+  height: 32px;
+  margin-bottom: 21px;
 
   font-size: 0;
 
@@ -602,8 +599,8 @@ body {
  display: inline-block;
 
  font-size: 14px;
- line-height: 38px;
- vertical-align: top;
+ line-height: 28px;
+ vertical-align: middle;
 
  cursor: pointer;
 }
@@ -619,7 +616,8 @@ body {
  margin: 0;
 
  color: inherit;
- font: inherit;
+ ont-size: 14px;
+ line-height: 28px;
 
  background: none;
  border: none;
@@ -628,7 +626,7 @@ body {
 .cursor-price {
  position: relative;
 
- margin-bottom: 32px;
+ margin-bottom: 31px;
 }
 
 .cursor-price .scale {
@@ -673,10 +671,11 @@ body {
 .btn-price {
  display: block;
  margin: 0 auto;
- padding: 6px 35px;
+ padding: 4px 34px;
 
+ font-family: "PT Sans", "Arial", sans-serif;
  font-size: 14px;
- line-height: 20px;
+ line-height: 21px;
  color: #ffffff;
  text-transform: uppercase;
 
@@ -836,7 +835,7 @@ body {
 
 .btn-hotel {
   display: inline-block;
-  min-width: 110px;
+  width: 110px;
   text-align: center;
   vertical-align: middle;
   margin: 0;
@@ -862,7 +861,7 @@ body {
 }
 
 .variety {
-  min-width: 145px;
+  width: 145px;
 
   background-color: #766357;
 }
