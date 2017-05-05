@@ -89,6 +89,14 @@ body {
    margin-left: -70px;
  }
 
+ .logo a {
+   display: block;
+ }
+
+ .logo img {
+   display: block;
+ }
+
  /*----------------------   MAIN PART I  -----------*/
 .picture {
 	position: relative;
@@ -526,7 +534,7 @@ body {
 .options {
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 33px;
+  padding-bottom: 1px;
   padding-left: 6%;
   padding-right: 6%;
 
@@ -550,15 +558,56 @@ body {
 }
 
 .headline-features {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 28px;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
 }
 
 .item-features {
-  display: block;
+  display: none;
 }
 
+.mark-features {
+  position: relative;
+
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 27px;
+
+  cursor: pointer;
+}
+
+.mark-features::before {
+  content:'';
+  position:absolute;
+  top: 0;
+  left: 0px;
+
+	display:block;
+	width:26px;
+  height:22px;
+
+  background: url(../img/checkbox.png) no-repeat;
+}
+
+.item-features:checked + .mark-features::before {
+	background: url(../img/check.png) no-repeat;
+}
+
+.item-features:disabled + .mark-features::before {
+	background: url(../img/checkbox-block.png) no-repeat;
+}
+
+.item-features:disabled:checked + .mark-features::before {
+	background: url(../img/check-block.png) no-repeat;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .price {
   width: 320px;
 
@@ -566,7 +615,7 @@ body {
   text-transform: uppercase;
 }
 
-.headline-features {
+.price .headline-features {
   margin-top: 0;
   margin-bottom: 11px;
 }
@@ -694,7 +743,6 @@ body {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .sort {
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
   margin: 0;
   padding: 30px 6%;
@@ -738,8 +786,19 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 12px;
     line-height: 18px;
+
     text-decoration: none;
-    /*color: #000000;*/
+    color: #b2b2b2;
+    border-bottom: 1px dotted;
+  }
+
+  .menu-sort a:hover {
+    color: #81b3d2;
+  }
+
+  .menu-sort a:active {
+    color: black;
+    border: none;
   }
 
  .up-sort {
@@ -816,6 +875,13 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-decoration: none;
   color: black;
+}
+.link-hotel:hover {
+  color: #81b3d2;
+}
+
+.link-hotel:active {
+  color: #cacaca;
 }
 
 .box-hotel {
@@ -1012,24 +1078,3 @@ body {
 .btn-copyrihgt:active {
   background: transparent url(../img/btn-copyrihgt-active.png) no-repeat;
 }
-
-/*ЦВЕТА
-голубые
-color: #81b3d2; покой
-color: #669ec0; наведение
-color: #5496bd; нажатие + #94b9d2 шрифт
-
-для поля ввода
-color: #f2f2f2; покой
-color: #ebebeb; наведение
-color: #e5e5e5; фокус
-
-коричневые
-color: #766357; покой
-color: #604e43; наведение
-color: #503e33; нажатие + #766860 шриф
-
-для гостиниц
-color: #000000; покой
-color: #81b3d2; наведение
-color: #cacaca; нажатие */
