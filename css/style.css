@@ -572,15 +572,19 @@ body {
 }
 
 .features:nth-of-type(2) {
-  margin-left: 0;
+  padding-left: 1px;
   margin-right: auto;
   align-self: flex-start;
+}
+
+.features:nth-of-type(2) .headline-features {
+  margin-left: -1px;
 }
 
 .headline-features {
   padding: 0;
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   font-size: 16px;
   font-weight: bold;
@@ -596,7 +600,7 @@ body {
 
   display: block;
   padding-left: 40px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   cursor: pointer;
 }
@@ -604,8 +608,8 @@ body {
 .mark-features::before {
   content:'';
   position:absolute;
-  top: 0;
-  left: 0px;
+  top: -2px;
+  left: -1px;
 
 	display:block;
 	width:26px;
@@ -642,13 +646,13 @@ body {
 .price .headline-features {
   margin-top: 0;
   margin-bottom: 10px;
-  padding-left: 1px;
+  padding-left: 2px;
 }
 
 .field-price {
   position: relative;
   height: 32px;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   font-size: 0;
 
@@ -672,9 +676,11 @@ body {
 .field-price label {
  display: inline-block;
 
- font-size: 14px;
- line-height: 28px;
+ padding-top: 2px;
  vertical-align: middle;
+
+ font-size: 14px;
+ line-height: 21px;
 
  cursor: pointer;
 }
@@ -858,7 +864,6 @@ body {
  .down-sort {
    display: inline-block;
    vertical-align: bottom;
-   margin-top: 7px;
    margin-left: 8px;
    border: 5.5px solid transparent;
    border-top: 9px solid #81b3d2;
@@ -889,8 +894,8 @@ body {
   align-items: center;
 
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 28px;
+  padding-top: 25px;
+  padding-bottom: 29px;
   padding-left: 6%;
   padding-right: 6%;
 
@@ -913,7 +918,7 @@ body {
 }
 
 .headline-hotel {
-  margin: 0 0 8px 0;
+  margin: 0 0 7px 0;
   padding: 0;
 
   font-size: 21px;
@@ -941,7 +946,7 @@ body {
 }
 
 .item-box-hotel {
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .text-hotel {
@@ -977,7 +982,7 @@ body {
 }
 
 .variety {
-  width: 145px;
+  width: 142px;
 
   background-color: #766357;
 }
