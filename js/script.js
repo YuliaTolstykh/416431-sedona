@@ -3,6 +3,7 @@ var GoogleMap=document.querySelector("iframe");
 var searchHotels=document.querySelector(".btn-search");
 var popup=document.querySelector(".popup-search");
 
+popup.classList.add("block-display");
 searchHotels.addEventListener("click", function (evt){
   popup.classList.toggle("block-display");
 });
