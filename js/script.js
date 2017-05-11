@@ -4,7 +4,7 @@ var popup = document.querySelector(".popup-search");
 
 mapImg.classList.add("block-display");
 popup.classList.add("block-display");
-searchHotels.addEventListener("click", function (evt){
+searchHotels.addEventListener("click", function (evt) {
   popup.classList.toggle("block-display");
 });
 

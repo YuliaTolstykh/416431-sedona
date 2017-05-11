@@ -17,7 +17,7 @@ body {
   width: 1200px;
   margin: auto;
 
-  background-color: white;
+  background-color: 	#ffffff;
   -webkit-box-shadow: 0 -7px 14px 7px #dbdbdb;
           box-shadow: 0 -7px 14px 7px #dbdbdb;
 }
@@ -116,7 +116,7 @@ body {
 	margin: 0;
   padding: 0;
 
-  background-image: url(../img/background-photo.jpg);
+  background-image: url("../img/background-photo.jpg");
   background-position: 0 -56px;
   background-color: #ebebeb;
 }
@@ -147,7 +147,7 @@ body {
   padding-top: 61px;
   padding-bottom: 51px;
 
-  background-color: white;
+  background-color: 	#ffffff;
 }
 
 .headline-text {
@@ -184,7 +184,7 @@ body {
   padding-bottom: 57px;
 
   text-align: center;
-	color: white;
+	color: 	#ffffff;
 
 	background-color: #81b3d2;
 }
@@ -303,7 +303,7 @@ body {
 .card-gray {
   padding-right: 1px;
 
-	color: black;
+	color: 	#000000;
 	background-color: #f2f2f2;
 }
 
@@ -347,7 +347,7 @@ body {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  color: white;
+  color: 	#ffffff;
   text-transform: uppercase;
 
   background-color: #766357;
@@ -370,7 +370,7 @@ body {
   padding: 55px;
 
   font-weight: bold;
-  background-color: white;
+  background-color: 	#ffffff;
   -webkit-box-shadow: 0 7px 15px -2px #bcbcbc;
           box-shadow: 0 7px 15px -2px #bcbcbc;
 }
@@ -445,7 +445,7 @@ body {
 }
 
 .data:focus {
-  background-color: white;
+  background-color: 	#ffffff;
   -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
           box-shadow: inset 0 0 0 2px #e5e5e5;
 }
@@ -539,7 +539,7 @@ body {
 }
 
 .number:focus {
-  background-color: white;
+  background-color: 	#ffffff;
   -webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
           box-shadow: inset 0 0 0 2px #e5e5e5;
 }
@@ -575,7 +575,7 @@ body {
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
-  color: white;
+  color: 	#ffffff;
 
   background-color: #81b3d2;
   border: none;
@@ -606,7 +606,7 @@ body {
   padding-left: 6%;
   padding-right: 6%;
 
-  color: white;
+  color: 	#ffffff;
   background-image: url("../img/background-photo-inner.jpg");
   background-position: 0 -58px;
   background-color: #81b3d2;
@@ -896,7 +896,7 @@ body {
 }
 
 .menu-sort a:active {
-  color: black;
+  color: 	#000000;
   border: none;
 }
 
@@ -932,7 +932,7 @@ body {
 }
 
 .up-sort:hover {
-  border-bottom: 9px solid black;
+  border-bottom: 9px solid 	#000000;
 }
 
 .up-sort:active {
@@ -983,7 +983,7 @@ body {
 .link-hotel {
   font-family: "PT Sans", "Arial", sans-serif;
   text-decoration: none;
-  color: black;
+  color: 	#000000;
 }
 .link-hotel:hover {
   color: #81b3d2;
@@ -1022,7 +1022,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: 	#ffffff;
 
   background-color: #81b3d2;
   border: none;
