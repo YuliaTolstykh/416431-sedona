@@ -939,14 +939,6 @@ body {
   border-bottom: 9px solid #81b3d2;
 }
 
-/*.down-sort:hover {
-  border-top: 9px solid black;
-}
-
-.down-sort:active {
-  border-top: 9px solid #81b3d2;
-}*/
-
 .hotel {
   display: -webkit-box;
   display: -ms-flexbox;
