@@ -52,8 +52,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -61,6 +61,8 @@ body {
 }
 
 .item-navigation {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 20%;
   padding: 0;
 }
@@ -404,9 +406,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   margin-bottom: 29px;
 }
@@ -445,6 +447,8 @@ body {
   height: 22px;
   font-size: 0;
 
+  border: none;
+  outline: none;
   background-image: url("../img/sprites.png");
   background-position: -225px -74px ;
 }
@@ -505,6 +509,10 @@ body {
   padding-left: 0;
 }
 
+.subsection-popup-search:nth-of-type(1) .label-search {
+  width: 72px;
+}
+
 .subsection-popup-search:nth-of-type(2) {
   margin-left: auto;
 }
@@ -514,6 +522,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .subsection-popup-search:nth-of-type(1) .number-search {
   margin-left: 38px;
 }
@@ -654,7 +663,7 @@ body {
 }
 
 .features {
-  margin-right: 119px;
+  width: 255px;
 }
 
 .features:nth-of-type(2) {
