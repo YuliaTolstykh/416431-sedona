@@ -52,6 +52,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin: 0;
   padding: 0;
 
@@ -334,8 +336,10 @@ body {
 }
 
 .btn-search {
-  display: block;
+  position: relative;
+  z-index: 70;
 
+  display: block;
   width: 568px;
   margin-top: 0;
   margin-right: auto;
@@ -373,6 +377,27 @@ body {
   background-color: 	#ffffff;
   -webkit-box-shadow: 0 7px 15px -2px #bcbcbc;
           box-shadow: 0 7px 15px -2px #bcbcbc;
+}
+
+@-webkit-keyframes move {
+  0% {-webkit-transform: translateY(-240px) scale(1,0.1);transform: translateY(-240px) scale(1,0.1);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0); }
+}
+
+@keyframes move {
+  0% {-webkit-transform: translateY(-240px) scale(1,0.1);transform: translateY(-240px) scale(1,0.1);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0); }
+}
+
+.popup-anime {
+ -webkit-animation-name: move, scale;
+         animation-name: move, scale;
+ -webkit-animation-duration: 1s, 0.1s;
+         animation-duration: 1s, 0.1s;
+ -webkit-animation-fill-mode: forwards;
+         animation-fill-mode: forwards;
+ -webkit-animation-timing-function:ease-in;
+         animation-timing-function:ease-in;
 }
 
 .section-popup-search {
@@ -460,26 +485,15 @@ body {
   padding-top: 1px;
 }
 
-.subsection-popup-search .label-search {
-  padding-left: 0;
-  margin-right: 40px;
-}
-
-.subsection-popup-search:nth-of-type(1) {
-  margin-right: 40px;
-}
-
-.subsection-popup-search:nth-of-type(2)  .label-search {
-  margin-right: 28px;
-  padding-left: 12px;
-}
-
 .number-search {
   position: relative;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
+  -ms-flex-preferred-size: 115px;
+      flex-basis: 115px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 115px;
   margin-left: auto;
   padding-left: 25px;
@@ -487,10 +501,31 @@ body {
   background-color: #f2f2f2;
 }
 
+.subsection-popup-search .label-search {
+  padding-left: 0;
+}
+
+.subsection-popup-search:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.section-popup-search:nth-of-type(3) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subsection-popup-search:nth-of-type(1) .number-search {
+  margin-left: 38px;
+}
+
+.subsection-popup-search:nth-of-type(2) .number-search {
+  margin-left: 25px;
+}
+
 .number {
   width: 34px;
-  padding: 9px 5px 8px 5px;
-  margin-left: 10px;
+  padding: 9px 4px 8px 6px;
+  margin-left: 11px;
   text-align: center;
 
   font-weight: bold;
@@ -506,7 +541,7 @@ body {
 .minus {
   position: absolute;
   top: 18px;
-  left: 12px;
+  left: 14px;
 
   display: block;
   width: 12px;
@@ -691,7 +726,10 @@ body {
 }
 
 .price {
-  width: 317px;
+  -ms-flex-preferred-size: 317px;
+      flex-basis: 317px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 
   color: #ffffff;
   text-transform: uppercase;
